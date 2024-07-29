@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+body{
+  min-height: 100vh;
+}
+
+nav{
+  background-color: #f0f8ff;
+}
+
+nav ul{
+  width: 100%;
+  height: 6rem;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav img{
+  width: 15rem;
+  margin-left: 20px;
+}
+
+nav a{
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #034694;
+  padding: 0.66rem 1.56rem;
+  border-radius: 7.5rem;
+  transition: 0.2s;
+  font-family: "Montserrat", serif;
+  font-size: 1rem;
+  margin: 0.4rem;
+}
+
+nav a.hovers:hover{
+  color: #F0F8FF;
+  background-color: #0076CE;
+}
+
+nav a.active{
+  color: #F0F8FF;
+  background-color: #0076CE;
+}
+
+nav a.cta{
+  color: #F0F8FF;
+  background-color: #034694;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav a.cta:hover{
+  background-color: #0076CE;
+  color: #F0F8FF;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 17rem;
+  z-index: 999;
+  background-color: #f0f8ff00;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  margin: 0.625rem;
+}
+
+.sidebar a{
+  padding-top: 0.13rem;
+  padding-bottom: 0.13rem;
+  border-radius: 7.5rem;
+}
+
+.about-section{
+  width: 100%;
+  height: auto;
+}
+
+.about{
+  margin: 4rem;
+}
+
+h1{
+  font-family: "Poppins", serif;
+  font-size: 4rem;
+  padding: 2rem;
+  line-height: 5rem;
+  color: #034694;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2{
+  font-family: "Poppins", serif;
+  font-size: 4rem;
+  padding: 2rem 7rem;
+  line-height: 5rem;
+  color: #034694;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+p{
+  font-family: "DM Sans", serif;
+  font-size: 1rem;
+  line-height: 1.9rem;
+  color: #034694;
+  text-align: justify;
+  margin: 2rem 7rem;
+  font-weight: 500;
+}
+
+span{
+  color: #0076CE;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #034694;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  background-color: #F0F8FF;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+footer p{
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1rem;
+  color: #034694;
+  text-align: center;
+}
+
+@media(max-width: 1032px){
+  nav a{
+    font-size: 1rem;
+  }
+
+  .about{
+    margin: 2rem;
+  }
+
+  h1, h2{
+    font-size: 4rem;
+    padding: 1rem;
+  }
+}
+
+@media(max-width: 1016px){
+  .hideOnMobile{
+    display: none;
+  }
+}
+
+@media(max-width: 768px){
+
+  .about{
+    margin: 1rem;
+  }
+
+  p{
+    font-size: 1.1rem;
+    margin: 2rem 3rem;
+  }
+
+  h2{
+    padding: 1rem 4rem;
+    margin: 0;
+    font-size: 3rem;
+  }
+}
+
+@media(max-width:425px){
+  nav img{
+    width: 12rem;
+    margin-left: 20px;
+  }
+
+  p{
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+  }
+
+  h1{
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  h2{
+    font-size: 3rem;
+    line-height: 3rem;
+    padding: 2rem;
+  }
+
+  footer p{
+    font-size: 0.7rem;
+  }
+}
+
+@media(max-width: 320px){
+  .hideOnMobile{
+    display: none;
+  }
+
+  nav img{
+    width: 12rem;
+    margin-left: 1.4rem;
+  }
+}

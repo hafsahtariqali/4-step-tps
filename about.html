@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="icon" type="image/x-icon" href="images\logo (2).png">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSideBar(event)><a href="" class="cross"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#034694"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html" class="hovers">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="freecall.html" class="hovers">Consultation</a></li>
+      <li><a href="https://forms.gle/XnhnszcUk5iQ83Jb7" target="_blank" class="cta">Get Started</a></li>
+    </ul>
+    <ul>
+      <li><img src="images\logo.png" alt="logo"></li>
+      <li class="hideOnMobile"><a href="index.html" class="hovers">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html" class="active">About</a></li>
+      <li class="hideOnMobile"><a href="freecall.html" class="hovers">Consultation</a></li>
+      <li class="hideOnMobile"><a href="https://forms.gle/XnhnszcUk5iQ83Jb7" target="_blank" class="cta">Get Started</a></li>
+      <li onclick=showSideBar(event)><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#034694"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <div class="about-section">
+  <div class="about">
+    <div class="main-title">
+      <h1>About 4-STEP-TPS</h1>
+    </div>
+    <div class="body">
+      <p>The 4-STEP-Training Program for Social Media Addiction (4-STEP-TPS) Program was developed in 2024 as a research project under the supervision of Dr. Qasir Abbas at Government College University Faisalabad (GCUF). The Program was co-founded by Ayesha Tariq Ali and Sabahat Shahid, 2 MS Scholars at the Department of Applied Psychology for their MS Clinical Psychology research project. Based on extensive research foundation, the 4-STEP-TPS is the first Program intervention to comprehensively address all the factors involved in the development as well as maintenance of social media addiction.
+      </p>
+    </div>
+    <div>
+      <h2>Meet the Team</h2>
+      <p><span>Dr. Qasir Abbas</span> is an Assistant Professor (Clinical Psychology) at Government College University Faisalabad (GCUF). He is a clinical psychologist with vast experience including as an addiction and rehabilitation specialist. Dr. Qasir has supervised several research projects on the social media addiction topic. His extensive background alongside clinical and research expertise has helped with the development of the 4-STEP-TPS Program. He serves as a mentor and PI for the Program’s clinical trial.
+      </p>
+      <p><span>Ayesha Tariq Ali</span>, currently an MS Scholar at GCUF and trainee clinical psychologist, is a passionate advocate for digital mental health. As the Head of Content at 7 Cups, she works with a team to deliver high-quality content and therapeutic projects to a global community seeking support. Ayesha's dedication to mental health advocacy has earned her recognition, including winning the Humanity Prize in 2022 for her innovative growth path intervention, "Finding Happiness Through Well-being: A Positive Psychology Path." This digital intervention received the H Prize, being recognized as the best overall growth path and best growth path in the happiness category, endorsed by expert judges like Everett Worthington and John Norcross. Ayesha was additionally one of 6 spotlight talk presenters at the Global Flourishing Conference in 2023, where she highlighted her team’s research on “Enhancing Active Listening to Foster Flourishing in Online Mental Health Communities - A Human-in-the-Loop AI Approach”. 
+
+      Ayesha has helped in the development of the 4-STEP-TPS Program with her expertise in intervention creation, and has implemented the Program in individual settings. Her continued focus is on developing scalable interventions and training programs that empower individuals on their well-being journey, with interests in social media, flourishing, and digital health measures including the integration of AI and the role of human-AI collaboration for wellbeing.
+    </p>
+    <p><span>Sabahat Shahid</span>, currently an MS Scholar at GCUF and a trainee clinical psychologist, is an advocate for interventions that support addiction management. As a trainee clinical psychologist, she has provided psychological assessment and therapy services to both children and adults. Sabahat’s professional background and clinical experience has helped in the development of the 4-STEP-TPS program. She has additionally implemented the Program in group settings and continues to explore the therapeutic factors in group therapy. Sabahat aims to continue studying social media addiction as well as digital intervention applications in the future.
+    </p>
+    <h2>4-STEP-TPS Structure</h2>
+    <p>This program consists of four core components or modules: <br><br>
+      1) <span>Screening, Assessment, and Psychoeducation (S) -</span> to conduct comprehensive screening and assessment of social media addiction, interpret the results, provide feedback and psychoeducation, and address resistance and motivation barriers. <br><br>
+      2) <span>Treatment Conceptualization and Planning (T) -</span> to identify addictive patterns and cognitive distortions, and develop tailored treatment plans (personalized user journeys) to modify these patterns and distortions. <br><br>
+      3) <span>Effective Management Strategies (E) -</span> to implement management strategies aimed at addressing identified patterns and distortions, utilizing tools (features) to track progress and adherence. <br><br>
+      4) <span>Prevention (Lapse-Relapse) (P) –</span> to build self-reflection and support mechanisms, monitor dependency levels, and develop slip plans and support additions to prevent lapses and relapses.
+      </p>
+      <p>Certificates will be provided to successful participants upon completion of the Training Program.</p>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <p style="margin: 0;">4-STEP-TPS | Social Media Addiction Training Program</p>
+</footer>
+
+
+  <script>
+    function showSideBar(event){
+      event.preventDefault();
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSideBar(event){
+      event.preventDefault();
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
